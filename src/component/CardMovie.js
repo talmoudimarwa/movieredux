@@ -3,6 +3,8 @@ import MovieRating from "../component/MovieRating";
 import { connect } from "react-redux";
 import EditMovie from "./EditMovie"
 import { deleteMovie } from "../action/action.js";
+import { Link } from "react-router-dom";
+
 const CardMovie = ({ film, deleteMovie }) => {
   // let id=Math.random();
   return (
@@ -16,7 +18,19 @@ const CardMovie = ({ film, deleteMovie }) => {
         e.preventDefault();
         deleteMovie(film.id);
       }} >X</div>
-      <EditMovie film={film} />
+      <div className="edit">
+      < EditMovie 
+      film={film} />
+      </div>
+      <Link
+          to={"/Trailer" + film.title }
+          
+          
+          className="trailer-btn btn "
+        >
+          Trailer
+        </Link>
+      
     </div>
   )
 }

@@ -92,7 +92,7 @@ class AddMovie extends React.Component {
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
-          Open Modal
+        Add Movie
         </Button>
         <Modal
           title="Basic Modal"

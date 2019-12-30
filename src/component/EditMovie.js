@@ -24,7 +24,7 @@ class EditMovie extends React.Component {
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
-          Edit
+          Edit Movie
         </Button>
         <Modal
           title="Basic Modal"

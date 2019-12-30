@@ -7,10 +7,13 @@ import 'antd/dist/antd.css';
 import {Provider} from "react-redux";
 import store from "./store";
 import 'antd/dist/antd.css';
+import {BrowserRouter} from 'react-router-dom';
 ReactDOM.render(
+<BrowserRouter>
 <Provider store={store}>
 <App />
 </Provider>
+</BrowserRouter>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
